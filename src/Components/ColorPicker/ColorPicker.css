@@ -1,0 +1,81 @@
+#color-page {
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.color-title {
+  padding: 10px 50px;
+  font-size: 25px;
+}
+
+.color-table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.color-tab-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 600px;
+  padding: 0px;
+  z-index: 1;
+}
+
+.color-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inline-picker,
+.inline-palette {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#preview {
+  background: transparent
+    url("https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png")
+    no-repeat;
+  height: 80px;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left),
+.e-input-group.e-success:not(.e-float-icon-left),
+.e-input-group.e-warning:not(.e-float-icon-left),
+.e-input-group.e-error:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .color-tab-holder {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  .inline-picker {
+    margin-top: 20px;
+  }
+  .color-tab-holder {
+    height: 800px;
+  }
+}

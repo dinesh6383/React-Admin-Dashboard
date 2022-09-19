@@ -1,0 +1,320 @@
+#header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.nav-icon,
+.intimation-icons {
+  font-size: 25px;
+}
+
+.intimation-icons {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icon,
+.cart-icon,
+.chat-icon,
+.notif-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.chat-icon::after,
+.notif-icon::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: aqua;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.notif-icon::after {
+  background-color: #fec90f;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.user-profile:hover {
+  background-color: rgb(249, 239, 239);
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  background: url("/images/man.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+  border-radius: 50%;
+}
+
+.user-profile p {
+  font-size: 15px;
+}
+
+.user-profile p span {
+  color: grey;
+  font-weight: 600;
+}
+
+/**************************
+--------USERS-BOX---------
+***************************/
+
+#users-box,
+#notif-box,
+#chat-box,
+#cart-box {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  box-shadow: 0px 0px 2px 2px rgb(218, 203, 203);
+  right: 50px;
+  border-radius: 10px;
+  background-color: #ffff;
+  z-index: 10;
+}
+
+#notif-box {
+  right: 150px;
+}
+
+#chat-box {
+  right: 180px;
+}
+
+#cart-box {
+  right: 200px;
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-bottom: 2px solid hsl(0, 15%, 75%);
+}
+
+.user-photo {
+  width: 120px;
+  height: 120px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  background-image: url("/images/man.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user-description {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+.user-description p,
+.indi-name span,
+.msg-user span {
+  font-size: 14px;
+  color: gray;
+}
+
+.user-description span {
+  font-weight: 600;
+  color: rgb(99, 95, 95);
+}
+
+.other-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.a-infos {
+  width: 340px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.indi-box {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 5px;
+  padding: 0px 40px;
+}
+
+.indi-box::after {
+  display: inline;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 250px;
+  background-color: rgb(228, 220, 220);
+  rotate: 90deg;
+  bottom: -125px;
+  left: 165px;
+}
+
+.indi-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.indi-name p {
+  font-weight: 600;
+}
+
+.noti-holder,
+.cart-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+}
+
+.noti-box,
+.carts {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.indi-noti,
+.indi-cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0px 10px;
+  border-bottom: 1px solid rgb(228, 220, 220);
+}
+
+.indi-cart {
+  height: 120px;
+}
+
+.msg-user-img,
+.prod-img {
+  width: 55px;
+  height: 55px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prod-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.msg-user p {
+  font-weight: 600;
+}
+
+.noti-box button,
+.carts button {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.prod-name p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.prod-name span {
+  color: gray;
+}
+
+.price {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 235px;
+}
+
+.price p {
+  font-weight: 500;
+}
+
+.quantizer {
+  position: absolute;
+  right: 40px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantizer p {
+  color: gray;
+  padding: 0px 10px;
+  border: 1px solid gray;
+}
+
+@media screen and (max-width: 600px) {
+  #users-box,
+  #notif-box,
+  #chat-box,
+  #cart-box {
+    right: 40px;
+  }
+}

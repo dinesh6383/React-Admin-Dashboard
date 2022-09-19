@@ -1,0 +1,59 @@
+.app-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.cancel {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.app-title h1 {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.app-modules {
+  margin-top: 35px;
+}
+
+.module-heading p {
+  font-size: 18px;
+  color: gray;
+  font-weight: 500;
+}
+
+.module-name {
+  margin: 20px;
+}
+
+.module-name p {
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.module-name span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 25px 0px;
+  padding: 8px 0px;
+  border-radius: 4px;
+  padding-left: 8px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.module-name span:hover {
+  background-color: #d4d6d9;
+}

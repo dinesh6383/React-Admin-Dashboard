@@ -1,0 +1,42 @@
+#customer-page {
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.customer-title {
+  padding: 10px 50px;
+  font-size: 25px;
+}
+
+.customer-table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.customer-tab-holder {
+  padding: 50px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.abcd {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .customer-tab-holder {
+    overflow-x: scroll;
+    padding: 20px 20px 100px 20px;
+  }
+}
